@@ -9,12 +9,9 @@ const Nostr = () => {
   //const [uniqueEvents, setUniqueEvents] = useState(new Set());
 
   const relayList = useMemo(() => [
-    "wss://nos.lol/",
-    "wss://relay.nostr.band/",
-    "wss://nostr.wine/",
-    "wss://purplepag.es/",
-    "wss://relayable.org/",
-    "wss://relay.damus.io",
+    "wss://relay.minibolt.info/",
+    "wss://relay.bitcoinbarcelona.xyz/",
+    "wss://relay.damus.io/",
   ], []);
 
   const getHexPubKey = (inNpub) => {
@@ -84,7 +81,7 @@ const Nostr = () => {
           //console.log(events, relayURL);
         }
       );
-        
+
       relayPool.onerror((err, relayUrl) => {
         console.log("RelayPool notice", err, " from relay ", relayUrl);
       });
@@ -95,9 +92,9 @@ const Nostr = () => {
         relayPool.close();
       };
     };
-    
+
     window.onload = onLoad;
-    
+
     return () => {
       window.onload = null;
     };
