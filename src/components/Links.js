@@ -13,11 +13,11 @@ export const Links = () => {
   return (
     <div className='linkContainer'>
       <div className='LinkBio'>
-      <h3>Links</h3>
         <p>
           {process.env.REACT_APP_SHORT_BIO}
         </p>
       </div>
+      <h3>Links</h3>
       {renderedLinks}
     </div>
   );
