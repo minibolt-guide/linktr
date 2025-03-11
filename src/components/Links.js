@@ -12,8 +12,8 @@ export const Links = () => {
   
   return (
     <div className='linkContainer'>
-      <h3>Links</h3>
       <div className='LinkBio'>
+      <h3>Links</h3>
         <p>
           {process.env.REACT_APP_SHORT_BIO}
         </p>
