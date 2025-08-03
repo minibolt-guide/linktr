@@ -9,10 +9,13 @@ const Nostr = () => {
   //const [uniqueEvents, setUniqueEvents] = useState(new Set());
 
   const relayList = useMemo(() => [
-    "wss://relay.minibolt.info/",
-    "wss://relay.bitcoinbarcelona.xyz/",
-    "wss://nos.lol/",
-    "wss://relay.damus.io/",
+    "wss://bostr.bitcointxoko.com",
+    "wss://relay.minibolt.info",
+    "wss://relay.nostr.band/all",
+    "wss://multiplexer.huszonegy.world",
+    "wss://bostr.shop",
+    "wss://pyramid.fiatjaf.com",
+    "wss://bitcoiner.social",
   ], []);
 
   const getHexPubKey = (inNpub) => {
