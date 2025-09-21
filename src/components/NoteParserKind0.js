@@ -29,7 +29,7 @@ const NoteParserKind0 = ({ note }) => {
         <a href={`lightning:${lud16}`} target='_blank' rel='noreferrer'>
           <LnIcon className='svg-src' />
         </a>
-        <a href={process.env.REACT_APP_NOSTR_OUTER_CHAT + nPub} target='_blank' rel='noreferrer'>
+        <a href={process.env.REACT_APP_NOSTR_OUTER_CHAT + 763b053bc37a0924c16f8f5a60782b7c1ad0a95b9bcac67971b355994e8daf9f} target='_blank' rel='noreferrer'>
           <GoChat className='svg-src' />
         </a>
         <a href={process.env.REACT_APP_NOSTR_OUTER_PROFILES + nPub} target='_blank' rel='noreferrer'>
